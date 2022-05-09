@@ -38,12 +38,13 @@ Unity Takım 2
 - https://trello.com/b/nwNfaVKt/bootcamp-ekip
 
 ## Sprint 1
-- Sprint Notları:
-- Sprint içinde tamamlanması tahmin edilen puan 
-- Puan tamamlama mantığı
-- Backlog düzeni ve story seçimleri
-- Daily scrum
-- Sprin board update
+- Sprint Notları: Oyunumuzun temelini atmak üzere bir taslak oluşturmaya çalıştık. Görev yükümüzün en hafif olduğu bu sprintte yüzeysel görevleri ve araştırmaları üstlendik.
+- Sprint içinde tamamlanması tahmin edilen puan: 30
+- Puan tamamlama mantığı: Proje boyunca belirlediğimiz toplam puan değeri 330'dur. Bu sprintte projemizi temellendirmekle yetindiğimiz için 30 puanın yeterli olduğuna karar verildi.
+- Backlog düzeni ve story seçimleri: Önümüzdeki haftalarda üstleneceğimiz görevlere göre story seçimi yapılmıştır.
+- Daily scrum: Scrum toplantılarına ve tartışmalara dair ekran görüntüleri ektedir.
+- Sprin board update![WhatsApp Image 2022-05-09 at 7 42 23 PM](https://user-images.githubusercontent.com/91905190/167462373-4321925f-99b5-43e9-a24a-cc66365414e9.jpeg)
+
 - Sprint Review
 - Sprint Retrospective
 - Diğer notlar
