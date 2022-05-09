@@ -37,4 +37,13 @@ Unity Takım 2
 ## Product Backlog URL
 - https://trello.com/b/nwNfaVKt/bootcamp-ekip
 
-
+## Sprint 1
+- Sprint Notları:
+- Sprint içinde tamamlanması tahmin edilen puan 
+- Puan tamamlama mantığı
+- Backlog düzeni ve story seçimleri
+- Daily scrum
+- Sprin board update
+- Sprint Review
+- Sprint Retrospective
+- Diğer notlar
