@@ -42,7 +42,9 @@ Unity Takım 2
 - Sprint içinde tamamlanması tahmin edilen puan: 30
 - Puan tamamlama mantığı: Proje boyunca belirlediğimiz toplam puan değeri 330'dur. Bu sprintte projemizi temellendirmekle yetindiğimiz için 30 puanın yeterli olduğuna karar verildi.
 - Backlog düzeni ve story seçimleri: Önümüzdeki haftalarda üstleneceğimiz görevlere göre story seçimi yapılmıştır.
-- Daily scrum: Scrum toplantılarına ve tartışmalara dair ekran görüntüleri ektedir.
+- Daily scrum: Scrum toplantılarına ve tartışmalara dair ekran görüntüler:![Ekran görüntüsü 2022-05-09 201515](https://user-images.githubusercontent.com/91905190/167462589-c63eedb6-4442-4ecc-9730-30953afc5b05.jpg)
+![Ekran görüntüsü 2022-05-09 201533](https://user-images.githubusercontent.com/91905190/167462591-d9fdc241-8797-45d2-9e46-318f8ece0576.jpg)
+
 - Sprin board update![WhatsApp Image 2022-05-09 at 7 42 23 PM](https://user-images.githubusercontent.com/91905190/167462373-4321925f-99b5-43e9-a24a-cc66365414e9.jpeg)
 
 - Sprint Review
