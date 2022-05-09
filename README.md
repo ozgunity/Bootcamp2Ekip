@@ -48,6 +48,6 @@ Unity Takım 2
 
 - Sprin board update![WhatsApp Image 2022-05-09 at 7 42 23 PM](https://user-images.githubusercontent.com/91905190/167462373-4321925f-99b5-43e9-a24a-cc66365414e9.jpeg)
 
-- Sprint Review
-- Sprint Retrospective
+- Sprint Review: Bu sprintte oyuna dair temellerin yanı sıra ilerleyen dönemlerde oyunumuza dahil olacak bir hikaye ve ek özellikler hakkında tartışmalar olmuştur. Ancak kesin bir karar henüz verilmediğinden bu sprinte sadece oyunun temelleri ve taslağı eklenmiştir.
+- Sprint Retrospective: İlerleyen sprintlerde spesifik ve daha detaylı görev atamaları yapılmalı.
 - Diğer notlar
