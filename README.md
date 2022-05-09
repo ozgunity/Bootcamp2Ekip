@@ -51,3 +51,6 @@ Unity Takım 2
 - Sprint Review: Bu sprintte oyuna dair temellerin yanı sıra ilerleyen dönemlerde oyunumuza dahil olacak bir hikaye ve ek özellikler hakkında tartışmalar olmuştur. Ancak kesin bir karar henüz verilmediğinden bu sprinte sadece oyunun temelleri ve taslağı eklenmiştir.
 - Sprint Retrospective: İlerleyen sprintlerde spesifik ve daha detaylı görev atamaları yapılmalı.
 - Diğer notlar
+
+![WhatsApp Image 2022-05-09 at 8 09 56 PM](https://user-images.githubusercontent.com/91905190/167463320-e7085cd2-9355-4ca6-8162-5f6085fd026a.jpeg)
+
