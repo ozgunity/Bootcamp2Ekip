@@ -62,6 +62,8 @@ Unity Takım 2
 ![Ekran görüntüsü 2022-05-23 181943](https://user-images.githubusercontent.com/91905190/169852688-3f56751c-a0c1-4130-837a-b1d5210660c8.jpg)
 
 - Sprint board update:
+![resim_2022-05-23_182417779](https://user-images.githubusercontent.com/91905190/169853443-b0d4a441-2e58-4022-ab74-7e8d6a4ecb1e.png)
+
 - Sprint review: Bu sprintte oyunumuzun ilk levelını tasarlayıp sonrasında gelecek levellara dair fikirler üretilmiştir.
 - Sprint retrospective: Sprint boyunca çalışırken zamanımızı verimli yönetemediğimizi gözlemledik. Bunun önüne geçmek adına 3. sprintte görevlerimize bir teslim tarihi ya da ara hedef eklemeyi düşündük. 
 
