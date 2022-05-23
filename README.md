@@ -55,4 +55,10 @@ Unity Takım 2
 ![WhatsApp Image 2022-05-09 at 8 09 56 PM](https://user-images.githubusercontent.com/91905190/167463320-e7085cd2-9355-4ca6-8162-5f6085fd026a.jpeg)
 
 ## Sprint 2
+-Sprint notları: Oyunumuzun 1. level tasarımını yaptık. Ana karakterimizi modelledik ve hareket kontollerini sağladık. Oyun müziklerini ve seslerini seçip oyunumuza ekledik. 
+-Sprint içinde tamamlanması tahmin edilen puan: 150
+-Daily scrum:
+-Sprint board update:
+-Sprint review: Bu sprintte oyunumuzun ilk levelını tasarlayıp sonrasında gelecek levellara dair fikirler üretilmiştir.
+-Sprint retrospective: Sprint boyunca çalışırken zamanımızı verimli yönetemediğimizi gözlemledik. Bunun önüne geçmek adına 3. sprintte görevlerimize bir teslim tarihi ya da ara hedef eklemeyi düşündük. 
 
