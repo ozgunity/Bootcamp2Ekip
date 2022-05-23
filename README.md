@@ -67,3 +67,6 @@ Unity Takım 2
 - Sprint review: Bu sprintte oyunumuzun ilk levelını tasarlayıp sonrasında gelecek levellara dair fikirler üretilmiştir.
 - Sprint retrospective: Sprint boyunca çalışırken zamanımızı verimli yönetemediğimizi gözlemledik. Bunun önüne geçmek adına 3. sprintte görevlerimize bir teslim tarihi ya da ara hedef eklemeyi düşündük. 
 
+- Diğer notlar: 
+![Ekran görüntüsü 2022-05-23 182304](https://user-images.githubusercontent.com/91905190/169853534-f157169c-1c03-480d-b06b-cb939fac00ec.jpg)
+
