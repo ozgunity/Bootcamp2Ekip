@@ -57,7 +57,8 @@ Unity Takım 2
 ## Sprint 2
 - Sprint notları: Oyunumuzun 1. level tasarımını yaptık. Ana karakterimizi modelledik ve hareket kontollerini sağladık. Oyun müziklerini ve seslerini seçip oyunumuza ekledik. 
 ![WhatsApp Image 2022-05-23 at 5 36 43 PM](https://user-images.githubusercontent.com/91905190/169853924-f58fd9ee-cef9-40a2-b30a-849435d3b967.jpeg)
-![WhatsApp Image 2022-05-23 at 5 36 43 PM](https://user-images.githubusercontent.com/91905190/169854014-cba0107a-fa53-4d02-b0ae-cc16481c8c7d.jpeg)
+![WhatsApp Image 2022-05-23 at 5 56 11 PM](https://user-images.githubusercontent.com/91905190/169854092-0038edb2-e77d-4a92-87a4-46a9eb28d75e.jpeg)
+
 
 
 - Sprint içinde tamamlanması tahmin edilen puan: 150
