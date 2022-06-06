@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-//using DG.Tweening;
 
 public class Movement : MonoBehaviour
 {
@@ -28,6 +27,7 @@ public class Movement : MonoBehaviour
     bool up;
     public float mySpeed;
 
+    float health = 100f;
 
     void Start()
     {
@@ -91,6 +91,11 @@ public class Movement : MonoBehaviour
             Destroy(col.gameObject);
             canUseRadar = true;
         }
+
+        else if(col.gameObject.tag == "Engel")
+        {
+            health -= 10f;
+        }
     }
 
     IEnumerator Radar()
@@ -100,32 +105,38 @@ public class Movement : MonoBehaviour
             myBool = true;
             plantMesh.enabled = true;
             colorChange = true;
+
             yield return new WaitForSeconds(5f);
             Debug.Log("Battery Died");
+
             plantMesh.enabled = false;
             colorChange = false;
         }
     }
 
-    void decraseRadarBattery()
-    {
-        if(radarBattery > 0)
-        {
-            radarBattery -= 1;
-        }
-    }
-
     void BallController()
     {
-        if (this.gameObject.transform.position.z <= 18f)
+        for(int k = 0; k < balls.Length; k++)
         {
-            for (int i = 0; i < balls.Length; i++)
+            if(this.gameObject.transform.position.z - balls[k].transform.position.z <= 15f)
             {
-                BallsGravity = balls[i].GetComponent<Rigidbody>();
-                BallsGravity.useGravity = true;
+                for (int i = 0; i < balls.Length; i++)
+                {
+                    BallsGravity = balls[i].GetComponent<Rigidbody>();
+                    BallsGravity.useGravity = true;
+                }
             }
-            
         }
+
+        //if (this.gameObject.transform.position.z <= 32f)
+        //{
+        //    for (int i = 0; i < balls.Length; i++)
+        //    {
+        //        BallsGravity = balls[i].GetComponent<Rigidbody>();
+        //        BallsGravity.useGravity = true;
+        //    }
+            
+        //}
     }
 
     void changeColor()
