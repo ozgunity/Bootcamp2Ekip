@@ -174,7 +174,8 @@ public class Movement : MonoBehaviour
 
         if(level3)
         {
-
+            Debug.Log("Win!");
+            SceneManager.LoadScene(1);
         }
    }
    
