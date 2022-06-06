@@ -8,7 +8,7 @@ public class Movement : MonoBehaviour
 {
     public float speed;
 
-    bool canUseRadar = false;
+    
     public int radarBattery = 10;
 
 
@@ -24,7 +24,7 @@ public class Movement : MonoBehaviour
 
     float health = 100f;
     public Text healthValue;
-    public Text countDown;
+    
     public Image HealthBarFront;
     public Image HealthBarRear;
 
@@ -37,6 +37,7 @@ public class Movement : MonoBehaviour
     bool level2 = false;
     bool level3 = false;
 
+   
     void Start()
     {
         
@@ -48,7 +49,7 @@ public class Movement : MonoBehaviour
         healthValue = GetComponentInChildren<Text>();
         plantLight.enabled = false;
 
-        
+      
     }
 
     void Update()
@@ -57,7 +58,8 @@ public class Movement : MonoBehaviour
         float moveZ = -Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         transform.Translate(moveZ, 0, moveX);
 
-        healthValue.text = health.ToString();
+        int myHealth = (int)health;
+        healthValue.text = myHealth.ToString();
 
         if(aValue<=0)
         {
@@ -78,6 +80,9 @@ public class Movement : MonoBehaviour
 
         
         PlatformController();
+
+        
+        
     }
 
     
@@ -96,7 +101,7 @@ public class Movement : MonoBehaviour
         else if (col.gameObject.tag == "Radar")
         {
             Destroy(col.gameObject);
-            canUseRadar = true;
+            
             level1 = true;
         }
 
@@ -119,6 +124,7 @@ public class Movement : MonoBehaviour
 
         else if(col.gameObject.tag =="Level3")
         {
+            Destroy(col.gameObject);
             level3 = true;
         }
     }
@@ -171,4 +177,5 @@ public class Movement : MonoBehaviour
 
         }
    }
+   
 }

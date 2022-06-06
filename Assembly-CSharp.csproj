@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\rotateMe.cs" />
     <Compile Include="Assets\Scripts\RotatePlus.cs" />
     <Compile Include="Assets\BallController.cs" />
+    <Compile Include="Assets\Scripts\time.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
