@@ -11,6 +11,10 @@ TagManager:
   - Radar
   - Ball
   - Engel
+  - Platform
+  - Gate
+  - Door1
+  - Wall
   layers:
   - Default
   - TransparentFX

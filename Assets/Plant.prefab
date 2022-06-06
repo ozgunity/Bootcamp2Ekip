@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 6110166258737456295}
   - component: {fileID: 8943168690468003309}
   - component: {fileID: 5564547721288661369}
+  - component: {fileID: 435688539372293093}
   m_Layer: 0
   m_Name: Plant
-  m_TagString: Untagged
+  m_TagString: Plant
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81,6 +82,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &435688539372293093
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3061749181979932572}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 39c8164afea659940ba8b48787ebe43a, type: 3}
 --- !u!1 &3434981073391476932
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,7 +139,7 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.23330365, g: 1, b: 0.0990566, a: 1}
-  m_Intensity: 8.45
+  m_Intensity: 1.4273106
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208

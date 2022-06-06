@@ -34,8 +34,11 @@ public class Movement : MonoBehaviour
 
     GameObject[] platforms;
 
+    GameObject door1;
+
     void Start()
     {
+        door1 = GameObject.FindGameObjectWithTag("Door1");
         platforms = GameObject.FindGameObjectsWithTag("Platform");
         balls = GameObject.FindGameObjectsWithTag("Ball");
         plantMesh = plant.GetComponentInChildren<MeshRenderer>();
@@ -113,6 +116,14 @@ public class Movement : MonoBehaviour
             health -= 10f;
             HealthBarFront.fillAmount -= .1f;
         }
+        else if (col.gameObject.tag == "Gate")
+        {
+            foreach(GameObject plt in platforms)
+            {
+                Destroy(plt);
+            }
+            Destroy(door1);
+        }
     }
 
     IEnumerator Radar()
@@ -166,7 +177,11 @@ public class Movement : MonoBehaviour
 
    void PlatformController()
    {
-        Vector3 myPlatform = platforms[(Random.Range(0, platforms.Length))].transform.position;
+        GameObject _platform = platforms[(Random.Range(0, platforms.Length))];
+
+        _platform.gameObject.tag = "Gate";
+
+        Vector3 myPlatform = _platform.transform.position;
 
         Instantiate(plant, myPlatform, Quaternion.identity);
    }
