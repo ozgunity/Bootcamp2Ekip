@@ -24,6 +24,7 @@ public class Movement : MonoBehaviour
 
     float health = 100f;
     public Text healthValue;
+    public Text countDown;
     public Image HealthBarFront;
     public Image HealthBarRear;
 
@@ -34,6 +35,7 @@ public class Movement : MonoBehaviour
 
     bool level1 = false;
     bool level2 = false;
+    bool level3 = false;
 
     void Start()
     {
@@ -114,6 +116,11 @@ public class Movement : MonoBehaviour
             Destroy(col.gameObject);
             level2 = true;
         }
+
+        else if(col.gameObject.tag =="Level3")
+        {
+            level3 = true;
+        }
     }
    
 
@@ -157,6 +164,11 @@ public class Movement : MonoBehaviour
             Instantiate(plant, myPlatform2, Quaternion.identity);
 
             level2 = false;
+        }
+
+        if(level3)
+        {
+
         }
    }
 }

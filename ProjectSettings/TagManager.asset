@@ -17,6 +17,7 @@ TagManager:
   - Wall
   - Platform2
   - Level2
+  - Level3
   layers:
   - Default
   - TransparentFX
