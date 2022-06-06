@@ -20,7 +20,7 @@ public class Movement : MonoBehaviour
     public GameObject plant;
     MeshRenderer plantMesh;
     public Material plantMaterial;
-    public Light plantLight;
+    Light plantLight;
     bool colorChange = false;
 
     float aValue;
@@ -28,13 +28,22 @@ public class Movement : MonoBehaviour
     public float mySpeed;
 
     float health = 100f;
+    public Text healthValue;
+    public Image HealthBarFront;
+    public Image HealthBarRear;
+
+    GameObject[] platforms;
 
     void Start()
     {
+        platforms = GameObject.FindGameObjectsWithTag("Platform");
         balls = GameObject.FindGameObjectsWithTag("Ball");
-        plantMesh = plant.GetComponent<MeshRenderer>();
+        plantMesh = plant.GetComponentInChildren<MeshRenderer>();
+        plantLight = plant.GetComponentInChildren<Light>();
+        healthValue = GetComponentInChildren<Text>();
         plantLight.enabled = false;
 
+        PlatformController();
     }
 
     void Update()
@@ -42,6 +51,8 @@ public class Movement : MonoBehaviour
         float moveX = -Input.GetAxis("Vertical") * speed * Time.deltaTime;
         float moveZ = -Input.GetAxis("Horizontal") * speed * Time.deltaTime;
         transform.Translate(moveZ, 0, moveX);
+
+        healthValue.text = health.ToString();
 
         if(aValue<=0)
         {
@@ -95,6 +106,12 @@ public class Movement : MonoBehaviour
         else if(col.gameObject.tag == "Engel")
         {
             health -= 10f;
+            HealthBarFront.fillAmount -= .1f;
+        }
+        else if (col.gameObject.tag == "Ball")
+        {
+            health -= 10f;
+            HealthBarFront.fillAmount -= .1f;
         }
     }
 
@@ -127,16 +144,6 @@ public class Movement : MonoBehaviour
                 }
             }
         }
-
-        //if (this.gameObject.transform.position.z <= 32f)
-        //{
-        //    for (int i = 0; i < balls.Length; i++)
-        //    {
-        //        BallsGravity = balls[i].GetComponent<Rigidbody>();
-        //        BallsGravity.useGravity = true;
-        //    }
-            
-        //}
     }
 
     void changeColor()
@@ -156,4 +163,11 @@ public class Movement : MonoBehaviour
             aValue -= mySpeed * Time.deltaTime;
         }
     }
+
+   void PlatformController()
+   {
+        Vector3 myPlatform = platforms[(Random.Range(0, platforms.Length))].transform.position;
+
+        Instantiate(plant, myPlatform, Quaternion.identity);
+   }
 }
