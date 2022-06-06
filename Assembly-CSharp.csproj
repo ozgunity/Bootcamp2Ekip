@@ -61,6 +61,8 @@
     <Compile Include="Assets\Scripts\move.cs" />
     <Compile Include="Assets\Scripts\LevelControl.cs" />
     <Compile Include="Assets\Scripts\rotateMe.cs" />
+    <Compile Include="Assets\Scripts\RotatePlus.cs" />
+    <Compile Include="Assets\BallController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

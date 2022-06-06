@@ -11,11 +11,6 @@ public class Movement : MonoBehaviour
     bool canUseRadar = false;
     public int radarBattery = 10;
 
-    public Image myImg;
-    bool myBool = false;
-
-    GameObject[] balls;
-    Rigidbody BallsGravity;
 
     public GameObject plant;
     MeshRenderer plantMesh;
@@ -33,20 +28,25 @@ public class Movement : MonoBehaviour
     public Image HealthBarRear;
 
     GameObject[] platforms;
+    GameObject[] platforms2;
 
-    GameObject door1;
+    
+
+    bool level1 = false;
+    bool level2 = false;
 
     void Start()
     {
-        door1 = GameObject.FindGameObjectWithTag("Door1");
+        
         platforms = GameObject.FindGameObjectsWithTag("Platform");
-        balls = GameObject.FindGameObjectsWithTag("Ball");
+        platforms2 = GameObject.FindGameObjectsWithTag("Platform2");
+       
         plantMesh = plant.GetComponentInChildren<MeshRenderer>();
         plantLight = plant.GetComponentInChildren<Light>();
         healthValue = GetComponentInChildren<Text>();
         plantLight.enabled = false;
 
-        PlatformController();
+        
     }
 
     void Update()
@@ -74,17 +74,8 @@ public class Movement : MonoBehaviour
             plantLight.enabled = false;
         }
 
-
-        StartCoroutine(Radar());
-        Debug.Log(aValue);
         
-        if(myBool)
-        {
-            myImg.fillAmount -= Time.deltaTime / 5f;
-        }
-
-        BallController();
-        
+        PlatformController();
     }
 
     
@@ -104,6 +95,7 @@ public class Movement : MonoBehaviour
         {
             Destroy(col.gameObject);
             canUseRadar = true;
+            level1 = true;
         }
 
         else if(col.gameObject.tag == "Engel")
@@ -116,46 +108,14 @@ public class Movement : MonoBehaviour
             health -= 10f;
             HealthBarFront.fillAmount -= .1f;
         }
-        else if (col.gameObject.tag == "Gate")
+
+        else if(col.gameObject.tag == "Level2")
         {
-            foreach(GameObject plt in platforms)
-            {
-                Destroy(plt);
-            }
-            Destroy(door1);
+            Destroy(col.gameObject);
+            level2 = true;
         }
     }
-
-    IEnumerator Radar()
-    {
-        if (canUseRadar && Input.GetKey(KeyCode.R))
-        {
-            myBool = true;
-            plantMesh.enabled = true;
-            colorChange = true;
-
-            yield return new WaitForSeconds(5f);
-            Debug.Log("Battery Died");
-
-            plantMesh.enabled = false;
-            colorChange = false;
-        }
-    }
-
-    void BallController()
-    {
-        for(int k = 0; k < balls.Length; k++)
-        {
-            if(this.gameObject.transform.position.z - balls[k].transform.position.z <= 15f)
-            {
-                for (int i = 0; i < balls.Length; i++)
-                {
-                    BallsGravity = balls[i].GetComponent<Rigidbody>();
-                    BallsGravity.useGravity = true;
-                }
-            }
-        }
-    }
+   
 
     void changeColor()
     {
@@ -177,12 +137,26 @@ public class Movement : MonoBehaviour
 
    void PlatformController()
    {
-        GameObject _platform = platforms[(Random.Range(0, platforms.Length))];
+        if(level1)
+        {
+            GameObject _platform = platforms[(Random.Range(0, platforms.Length))];
 
-        _platform.gameObject.tag = "Gate";
+            Vector3 myPlatform1 = _platform.transform.position;
 
-        Vector3 myPlatform = _platform.transform.position;
+            Instantiate(plant, myPlatform1, Quaternion.identity);
 
-        Instantiate(plant, myPlatform, Quaternion.identity);
+            level1 = false;
+        }
+
+        if(level2)
+        {
+            GameObject _platform2 = platforms2[(Random.Range(0, platforms2.Length))];
+            
+            Vector3 myPlatform2 = _platform2.transform.position;
+            
+            Instantiate(plant, myPlatform2, Quaternion.identity);
+
+            level2 = false;
+        }
    }
 }
