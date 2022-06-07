@@ -75,3 +75,6 @@ Unity Takım 2
 - Diğer notlar: 
 ![Ekran görüntüsü 2022-05-23 182304](https://user-images.githubusercontent.com/91905190/169853534-f157169c-1c03-480d-b06b-cb939fac00ec.jpg)
 
+## Sprint 3
+- Sprint Notları: Oyunumuza birtakım engeller ekledik.
+- Sprint review: Kalan kısıtlı zaman ve ekip içinde karşılaştığımız zorluklar neticesinde hedeflediğimiz projeyi gerçekleştiremedik.
