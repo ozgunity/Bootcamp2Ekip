@@ -79,5 +79,5 @@ Unity Takım 2
 - Sprint Notları: Oyunumuza birtakım engeller ekledik.
 ![Ekran görüntüsü 2022-06-07 162228](https://user-images.githubusercontent.com/91905190/172390972-d6b662c8-24f2-4452-aeaf-dc215f8f9e14.jpg)
 
-- Sprint review: Kalan kısıtlı zaman ve ekip içinde karşılaştığımız zorluklar neticesinde hedeflediğimiz projeyi gerçekleştiremedik.![resim_2022-06-07_162237762]
+- Sprint review: Kalan kısıtlı zaman ve ekip içinde karşılaştığımız zorluklar neticesinde hedeflediğimiz projeyi gerçekleştiremedik.
 
